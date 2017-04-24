@@ -15,6 +15,9 @@
 		9A3836C81EAE52E10064FC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3836C61EAE52E10064FC10 /* LaunchScreen.storyboard */; };
 		9A3836D31EAE52E10064FC10 /* SalidoCodeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836D21EAE52E10064FC10 /* SalidoCodeTestTests.m */; };
 		9A3836DE1EAE52E10064FC10 /* SalidoCodeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836DD1EAE52E10064FC10 /* SalidoCodeTestUITests.m */; };
+		9A3836F01EAE53970064FC10 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836EF1EAE53970064FC10 /* User.m */; };
+		9A3836F31EAE53AD0064FC10 /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836F21EAE53AD0064FC10 /* Wine.m */; };
+		9A3836F61EAE53BA0064FC10 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		9A3836D91EAE52E10064FC10 /* SalidoCodeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalidoCodeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3836DD1EAE52E10064FC10 /* SalidoCodeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalidoCodeTestUITests.m; sourceTree = "<group>"; };
 		9A3836DF1EAE52E10064FC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3836EE1EAE53970064FC10 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		9A3836EF1EAE53970064FC10 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
+		9A3836F11EAE53AC0064FC10 /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wine.h; path = ../Wine.h; sourceTree = "<group>"; };
+		9A3836F21EAE53AD0064FC10 /* Wine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wine.m; path = ../Wine.m; sourceTree = "<group>"; };
+		9A3836F41EAE53BA0064FC10 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingCart.h; path = ../ShoppingCart.h; sourceTree = "<group>"; };
+		9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingCart.m; path = ../ShoppingCart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				9A3836BC1EAE52E10064FC10 /* AppDelegate.m */,
 				9A3836BE1EAE52E10064FC10 /* ViewController.h */,
 				9A3836BF1EAE52E10064FC10 /* ViewController.m */,
+				9A3836EE1EAE53970064FC10 /* User.h */,
+				9A3836EF1EAE53970064FC10 /* User.m */,
+				9A3836F11EAE53AC0064FC10 /* Wine.h */,
+				9A3836F21EAE53AD0064FC10 /* Wine.m */,
+				9A3836F41EAE53BA0064FC10 /* ShoppingCart.h */,
+				9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */,
 				9A3836C11EAE52E10064FC10 /* Main.storyboard */,
 				9A3836C41EAE52E10064FC10 /* Assets.xcassets */,
 				9A3836C61EAE52E10064FC10 /* LaunchScreen.storyboard */,
@@ -273,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3836F31EAE53AD0064FC10 /* Wine.m in Sources */,
+				9A3836F01EAE53970064FC10 /* User.m in Sources */,
 				9A3836C01EAE52E10064FC10 /* ViewController.m in Sources */,
 				9A3836BD1EAE52E10064FC10 /* AppDelegate.m in Sources */,
 				9A3836BA1EAE52E10064FC10 /* main.m in Sources */,
+				9A3836F61EAE53BA0064FC10 /* ShoppingCart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
