@@ -33,6 +33,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHu-Zi-TAt"/>
+                                    <segue destination="0li-ql-bD1" kind="show" id="Hz9-1N-Da9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwq-UH-U76">
@@ -74,19 +75,43 @@
         <!--WineListViewController-->
         <scene sceneID="ULn-jE-KtS">
             <objects>
-                <tableViewController id="1bA-RM-SAN" userLabel="WineListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ILI-hv-IDF">
+                <tableViewController id="1bA-RM-SAN" userLabel="WineListViewController" customClass="WineListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="208" sectionHeaderHeight="28" sectionFooterHeight="28" id="ILI-hv-IDF">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BKC-mC-0QS">
-                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="wineTableViewCell" rowHeight="208" id="BKC-mC-0QS">
+                                <rect key="frame" x="0.0" y="28" width="768" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BKC-mC-0QS" id="WyH-cc-dtF">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="207.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gK-e5-d7U">
+                                            <rect key="frame" x="545" y="14" width="187" height="186"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WineName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXm-an-zhJ">
+                                            <rect key="frame" x="8" y="23" width="122" height="177"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wine Descripton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faN-T8-wXr">
+                                            <rect key="frame" x="138" y="14" width="399" height="186"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.79794391521745833" green="1" blue="0.55196104822547021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7hR-ub-ADn" kind="showDetail" id="kjW-92-qTA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -94,10 +119,24 @@
                             <outlet property="delegate" destination="1bA-RM-SAN" id="TF0-3P-aaw"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Salido Wine App" id="xQZ-V1-IIv">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="rqV-Qs-z7c">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QMS-zT-nzQ">
+                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <segue destination="kSB-eg-svE" kind="popoverPresentation" popoverAnchorBarButtonItem="rqV-Qs-z7c" id="09M-qw-1zE">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xa5-js-RRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="41"/>
+            <point key="canvasLocation" x="1531.25" y="40.4296875"/>
         </scene>
         <!--ShoppingCartViewController-->
         <scene sceneID="h3R-ai-bRI">
@@ -115,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bh7-rw-erj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="739"/>
+            <point key="canvasLocation" x="1493" y="705"/>
         </scene>
         <!--DetailWineViewController-->
         <scene sceneID="z3i-rw-ZUs">
@@ -133,7 +172,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP5-il-cQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="43"/>
+            <point key="canvasLocation" x="2230.46875" y="42.7734375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eaA-Wz-dVl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0li-ql-bD1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DIe-NR-5NM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1bA-RM-SAN" kind="relationship" relationship="rootViewController" id="azw-Td-9mz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coA-4w-wdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.625" y="40.4296875"/>
         </scene>
     </scenes>
     <resources>
