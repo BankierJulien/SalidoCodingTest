@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A3836BA1EAE52E10064FC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836B91EAE52E10064FC10 /* main.m */; };
 		9A3836BD1EAE52E10064FC10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836BC1EAE52E10064FC10 /* AppDelegate.m */; };
-		9A3836C01EAE52E10064FC10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836BF1EAE52E10064FC10 /* ViewController.m */; };
 		9A3836C31EAE52E10064FC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3836C11EAE52E10064FC10 /* Main.storyboard */; };
 		9A3836C51EAE52E10064FC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3836C41EAE52E10064FC10 /* Assets.xcassets */; };
 		9A3836C81EAE52E10064FC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3836C61EAE52E10064FC10 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		9A3836F01EAE53970064FC10 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836EF1EAE53970064FC10 /* User.m */; };
 		9A3836F31EAE53AD0064FC10 /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836F21EAE53AD0064FC10 /* Wine.m */; };
 		9A3836F61EAE53BA0064FC10 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */; };
+		9AE65F8A1EAE5BF1006933A4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE65F891EAE5BF1006933A4 /* LoginViewController.m */; };
+		9AE65F911EAE6158006933A4 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE65F8F1EAE6158006933A4 /* PopUpViewController.m */; };
+		9AE65F921EAE6158006933A4 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE65F901EAE6158006933A4 /* PopUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,6 @@
 		9A3836B91EAE52E10064FC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A3836BB1EAE52E10064FC10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A3836BC1EAE52E10064FC10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A3836BE1EAE52E10064FC10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A3836BF1EAE52E10064FC10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A3836C21EAE52E10064FC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3836C41EAE52E10064FC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3836C71EAE52E10064FC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +60,11 @@
 		9A3836F21EAE53AD0064FC10 /* Wine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wine.m; path = ../Wine.m; sourceTree = "<group>"; };
 		9A3836F41EAE53BA0064FC10 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShoppingCart.h; path = ../ShoppingCart.h; sourceTree = "<group>"; };
 		9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShoppingCart.m; path = ../ShoppingCart.m; sourceTree = "<group>"; };
+		9AE65F881EAE5BF1006933A4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		9AE65F891EAE5BF1006933A4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		9AE65F8E1EAE6158006933A4 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
+		9AE65F8F1EAE6158006933A4 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
+		9AE65F901EAE6158006933A4 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +117,9 @@
 			children = (
 				9A3836BB1EAE52E10064FC10 /* AppDelegate.h */,
 				9A3836BC1EAE52E10064FC10 /* AppDelegate.m */,
-				9A3836BE1EAE52E10064FC10 /* ViewController.h */,
-				9A3836BF1EAE52E10064FC10 /* ViewController.m */,
-				9A3836EE1EAE53970064FC10 /* User.h */,
-				9A3836EF1EAE53970064FC10 /* User.m */,
-				9A3836F11EAE53AC0064FC10 /* Wine.h */,
-				9A3836F21EAE53AD0064FC10 /* Wine.m */,
-				9A3836F41EAE53BA0064FC10 /* ShoppingCart.h */,
-				9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */,
+				9AE65F8D1EAE6125006933A4 /* Views */,
+				9AE65F8C1EAE6118006933A4 /* Controllers */,
+				9AE65F8B1EAE6104006933A4 /* Model */,
 				9A3836C11EAE52E10064FC10 /* Main.storyboard */,
 				9A3836C41EAE52E10064FC10 /* Assets.xcassets */,
 				9A3836C61EAE52E10064FC10 /* LaunchScreen.storyboard */,
@@ -153,6 +153,38 @@
 				9A3836DF1EAE52E10064FC10 /* Info.plist */,
 			);
 			path = SalidoCodeTestUITests;
+			sourceTree = "<group>";
+		};
+		9AE65F8B1EAE6104006933A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A3836EE1EAE53970064FC10 /* User.h */,
+				9A3836EF1EAE53970064FC10 /* User.m */,
+				9A3836F11EAE53AC0064FC10 /* Wine.h */,
+				9A3836F21EAE53AD0064FC10 /* Wine.m */,
+				9A3836F41EAE53BA0064FC10 /* ShoppingCart.h */,
+				9A3836F51EAE53BA0064FC10 /* ShoppingCart.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9AE65F8C1EAE6118006933A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AE65F881EAE5BF1006933A4 /* LoginViewController.h */,
+				9AE65F891EAE5BF1006933A4 /* LoginViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9AE65F8D1EAE6125006933A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AE65F8E1EAE6158006933A4 /* PopUpViewController.h */,
+				9AE65F8F1EAE6158006933A4 /* PopUpViewController.m */,
+				9AE65F901EAE6158006933A4 /* PopUpViewController.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +296,7 @@
 				9A3836C81EAE52E10064FC10 /* LaunchScreen.storyboard in Resources */,
 				9A3836C51EAE52E10064FC10 /* Assets.xcassets in Resources */,
 				9A3836C31EAE52E10064FC10 /* Main.storyboard in Resources */,
+				9AE65F921EAE6158006933A4 /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +323,8 @@
 			files = (
 				9A3836F31EAE53AD0064FC10 /* Wine.m in Sources */,
 				9A3836F01EAE53970064FC10 /* User.m in Sources */,
-				9A3836C01EAE52E10064FC10 /* ViewController.m in Sources */,
+				9AE65F8A1EAE5BF1006933A4 /* LoginViewController.m in Sources */,
+				9AE65F911EAE6158006933A4 /* PopUpViewController.m in Sources */,
 				9A3836BD1EAE52E10064FC10 /* AppDelegate.m in Sources */,
 				9A3836BA1EAE52E10064FC10 /* main.m in Sources */,
 				9A3836F61EAE53BA0064FC10 /* ShoppingCart.m in Sources */,
@@ -446,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JulienBankier.SalidoCodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -457,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JulienBankier.SalidoCodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -525,6 +561,7 @@
 				9A3836E41EAE52E10064FC10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A3836E51EAE52E10064FC10 /* Build configuration list for PBXNativeTarget "SalidoCodeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +570,7 @@
 				9A3836E71EAE52E10064FC10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A3836E81EAE52E10064FC10 /* Build configuration list for PBXNativeTarget "SalidoCodeTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +579,7 @@
 				9A3836EA1EAE52E10064FC10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
